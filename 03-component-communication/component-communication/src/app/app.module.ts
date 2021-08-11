@@ -22,6 +22,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 
 import { SiblingAComponent } from './sibling-to-sibling/sibling-a/sibling-a.component';
 import { SiblingBComponent } from './sibling-to-sibling/sibling-b/sibling-b.component';
+import { CToPChildCComponent } from './child-to-parent/parent/childC/c-to-p-childC.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { SiblingBComponent } from './sibling-to-sibling/sibling-b/sibling-b.comp
     SiblingToSiblingComponent,
     UrlCommunicationComponent,
     SiblingAComponent,
-    SiblingBComponent
+    SiblingBComponent,
+    CToPChildCComponent
   ],
   imports: [
     BrowserModule,

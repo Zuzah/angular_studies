@@ -20,7 +20,7 @@ export class CtoPChildAComponent implements OnInit {
 
   onMessageChange(message: string) {
     
-    this.messageToParentEvent.emit("A: " + message);
+    this.messageToParentEvent.emit(message);
   }
 
 }

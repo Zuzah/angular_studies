@@ -1,9 +1,11 @@
 <div class="parent-container">
     <p>Parent Container</p>
-    <div>
+    <div class="child-messages">
         <!-- The property below 'messageFromChild' comes
         from resolving the $event object handled in the div below -->
-        <mat-card>Message from Child {{ messageFromChild }}</mat-card>
+        <mat-card>Child<b>A</b> via @Output: {{ messageFromChildA }}</mat-card>
+        <mat-card>Child<b>C</b> via @ViewChild {{ messageFromChildC }}
+        </mat-card>
     </div>
     <div class="children"> 
         <div>
@@ -17,9 +19,13 @@
             event handler to grab the $event which is emitted from child -->
             <app-c-to-p-childB></app-c-to-p-childB>
         </div>
-    </div>
-   
-</div>
+        <div>
+            <!-- Note: Using the Child Template, we use the Parent's 
+            event handler to grab the $event which is emitted from child -->
+            <app-c-to-p-childC #myViewChildRef></app-c-to-p-childC>
+        </div>
+    </div> 
+</div> 
 
 
 
